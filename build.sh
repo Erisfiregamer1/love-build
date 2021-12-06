@@ -98,8 +98,6 @@ build_windows(){
         # Download love for macos
         get_love_binaries "${bw_arch}"
 
-        mv "love-${INPUT_LOVE_VERSION}-${bw_arch}" "${INPUT_APP_NAME}_${bw_arch}"
-
         # Copy data
         cat "${bw_target}/love.exe" "application.love" > "${bw_target}/${INPUT_APP_NAME}.exe"
         # Delete unneeded files
